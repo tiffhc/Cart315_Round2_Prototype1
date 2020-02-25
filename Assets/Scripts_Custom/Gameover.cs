@@ -8,7 +8,7 @@ public class Gameover : MonoBehaviour
    // public GameObject player1; 
     // public GameObject player2;
 
-    static string winner; 
+    public static string winner; 
 
     //public string nextSceneName; 
     // Start is called before the first frame update
