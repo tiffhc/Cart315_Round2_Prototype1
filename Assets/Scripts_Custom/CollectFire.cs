@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class CollectFire : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject fire; 
     void Start()
     {
-        
+       
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player1"))
+        {
+            Destroy(fire);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
