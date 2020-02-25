@@ -4,17 +4,36 @@ using UnityEngine;
 
 public class CollectFire : MonoBehaviour
 {
-    public GameObject fire; 
-    void Start()
-    {
-       
-    }
+    public GameObject fire;
+    public GameObject MessagePanel;
+
+    public float time = 5;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player1"))
         {
             Destroy(fire);
+            OpenMessagePanel("");
+
         }
+    }
+
+    IEnumerator Start()
+    {
+        yield return new WaitForSeconds(time);
+            CloseMessagePanel();
+    }
+
+ 
+    public void OpenMessagePanel(string text)
+    {
+        MessagePanel.SetActive(true);
+    }
+
+    public void CloseMessagePanel()
+    {
+        MessagePanel.SetActive(false);
     }
 
 }

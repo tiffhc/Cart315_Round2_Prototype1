@@ -246,25 +246,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40d12b15e0e4a4f078abdd21d0cc1298, type: 3}
---- !u!1 &21638977 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6312099255338034119, guid: 40d12b15e0e4a4f078abdd21d0cc1298,
-    type: 3}
-  m_PrefabInstance: {fileID: 21638976}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &21638978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21638977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c24ebcee005d841f28c7a164eb2f9bec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fire: {fileID: 0}
 --- !u!1001 &23198997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -680,7 +661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030517578, y: -12.67}
+  m_AnchoredPosition: {x: -0.000030517578, y: -19.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &523049821
@@ -714,7 +695,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Fire Collected!
+  m_Text: '-Fire Collected!-
 
 '
 --- !u!222 &523049822
@@ -1680,6 +1661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 1092213094}
+  MessagePanel: {fileID: 1934337031}
+  time: 5
 --- !u!1001 &1285675363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2820,7 +2803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1934337032
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2854,7 +2837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 1}
+  m_Color: {r: 0.2830189, g: 0.2816839, b: 0.2816839, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
