@@ -15,17 +15,16 @@ public class CollectFire : MonoBehaviour
         {
             Destroy(fire);
             OpenMessagePanel("");
-
         }
     }
 
     IEnumerator Start()
     {
         yield return new WaitForSeconds(time);
-            CloseMessagePanel();
+        CloseMessagePanel();
     }
 
- 
+
     public void OpenMessagePanel(string text)
     {
         MessagePanel.SetActive(true);
