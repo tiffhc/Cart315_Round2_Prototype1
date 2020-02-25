@@ -756,7 +756,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122261281}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba158ff05cf30224f94bfdddec8e7635, type: 3}
   m_Name: 
@@ -803,6 +803,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1122261286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122261281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a520d832a901a2847bc65f90c25a5069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_moveSpeed: 10
+  m_turnSpeed: 60
+  m_jumpForce: 0
+  m_animator: {fileID: 1122261283}
+  m_rigidBody: {fileID: 1122261285}
+  m_controlMode: 0
 --- !u!1 &1357089839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1166,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869028196}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba158ff05cf30224f94bfdddec8e7635, type: 3}
   m_Name: 
@@ -1213,6 +1231,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26b8606ffbd64648a3d783b541e1e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_moveSpeed: 10
+  m_turnSpeed: 60
+  m_jumpForce: 0
+  m_animator: {fileID: 1869028200}
+  m_rigidBody: {fileID: 1869028199}
+  m_controlMode: 0
 --- !u!1001 &2085044280
 PrefabInstance:
   m_ObjectHideFlags: 0
