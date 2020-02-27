@@ -6,6 +6,7 @@ public class CollectFire : MonoBehaviour
 {
     public GameObject fire;
     public GameObject MessagePanel;
+    public bool fireDestroyed = false;
 
     public float time = 5;
 
@@ -14,7 +15,10 @@ public class CollectFire : MonoBehaviour
         if (other.gameObject.CompareTag("Player1"))
         {
             Destroy(fire);
+            fireDestroyed = true;
             OpenMessagePanel("");
+
+            Debug.Log("FIRE destroyed!");
         }
     }
 

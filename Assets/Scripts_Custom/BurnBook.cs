@@ -7,6 +7,8 @@ public class BurnBook : MonoBehaviour
     public GameObject book;
     public GameObject MessagePanel;
     public GameObject key;
+
+    public CollectFire CF;
     
     public float time = 5;
 
@@ -14,7 +16,7 @@ public class BurnBook : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player1"))
         {
-            if (gameObject.("fire") == null)
+            if (CF.fireDestroyed == true)
                 {
                     Destroy(book);
                     OpenMessagePanel("");
