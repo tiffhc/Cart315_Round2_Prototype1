@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player2_Move : MonoBehaviour
 {
+    public static int num_fire = 0;
+
     public void Initialize(GameObject character)
     {
         m_animator = character.GetComponent<Animator>();

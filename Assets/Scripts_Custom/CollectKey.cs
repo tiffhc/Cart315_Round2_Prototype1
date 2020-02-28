@@ -22,7 +22,7 @@ public class CollectKey : MonoBehaviour
                 OpenMessagePanel("");
                 key.SetActive(true);
 
-                door.transform.Rotate(0.0f, -65.0f, 0.0f);
+                door.transform.Rotate(0.0f, 65.0f, 0.0f);
             }
         }
 
