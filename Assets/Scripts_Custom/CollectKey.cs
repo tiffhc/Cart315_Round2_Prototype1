@@ -21,6 +21,8 @@ public class CollectKey : MonoBehaviour
                 Destroy(key);
                 OpenMessagePanel("");
                 key.SetActive(true);
+
+                door.transform.Rotate(0.0f, -65.0f, 0.0f);
             }
         }
 
