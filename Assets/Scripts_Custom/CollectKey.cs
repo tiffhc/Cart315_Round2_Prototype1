@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectFire : MonoBehaviour
+public class CollectKey : MonoBehaviour
 {
-    public GameObject fire;
+    public GameObject key;
     public GameObject MessagePanel;
-    public bool fireDestroyed = false;
+    public GameObject door;
+
+    public CollectMagnet CM;
 
     public float time = 5;
 
@@ -14,12 +16,16 @@ public class CollectFire : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player1"))
         {
-            Destroy(fire);
-            fireDestroyed = true;
-            OpenMessagePanel("");
+            if (CM.magnetDestroyed == true)
+            {
+                Destroy(key);
+                OpenMessagePanel("");
+                key.SetActive(true);
 
-            Debug.Log("FIRE destroyed!");
+                door.transform.Rotate(0.0f, -65.0f, 0.0f);
+            }
         }
+
     }
 
     IEnumerator Start()
@@ -38,5 +44,4 @@ public class CollectFire : MonoBehaviour
     {
         MessagePanel.SetActive(false);
     }
-
 }

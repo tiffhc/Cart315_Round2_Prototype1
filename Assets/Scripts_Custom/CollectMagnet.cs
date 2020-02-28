@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectFire : MonoBehaviour
+public class CollectMagnet : MonoBehaviour
 {
-    public GameObject fire;
+    public GameObject magnet;
     public GameObject MessagePanel;
-    public bool fireDestroyed = false;
+    public bool magnetDestroyed = false;
 
     public float time = 5;
 
@@ -14,11 +14,11 @@ public class CollectFire : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player1"))
         {
-            Destroy(fire);
-            fireDestroyed = true;
+            Destroy(magnet);
+            magnetDestroyed = true;
             OpenMessagePanel("");
 
-            Debug.Log("FIRE destroyed!");
+            Debug.Log("MAGNET destroyed!");
         }
     }
 

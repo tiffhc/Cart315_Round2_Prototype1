@@ -2,24 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectFire : MonoBehaviour
+public class BurnBook : MonoBehaviour
 {
-    public GameObject fire;
+    public GameObject book;
     public GameObject MessagePanel;
-    public bool fireDestroyed = false;
+    public GameObject key;
 
+    public CollectFire CF;
+    
     public float time = 5;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player1"))
         {
-            Destroy(fire);
-            fireDestroyed = true;
-            OpenMessagePanel("");
-
-            Debug.Log("FIRE destroyed!");
+            if (CF.fireDestroyed == true)
+                {
+                    Destroy(book);
+                    OpenMessagePanel("");
+                    key.SetActive(true);
+                }
         }
+
     }
 
     IEnumerator Start()
@@ -38,5 +42,4 @@ public class CollectFire : MonoBehaviour
     {
         MessagePanel.SetActive(false);
     }
-
 }
