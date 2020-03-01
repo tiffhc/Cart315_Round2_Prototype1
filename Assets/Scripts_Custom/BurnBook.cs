@@ -7,6 +7,7 @@ public class BurnBook : MonoBehaviour
     public GameObject book;
     public GameObject MessagePanel;
     public GameObject key;
+    public GameObject magnet;
 
     public CollectFire CF;
     
@@ -21,6 +22,7 @@ public class BurnBook : MonoBehaviour
                     Destroy(book);
                     OpenMessagePanel("");
                     key.SetActive(true);
+                    magnet.SetActive(true);
                 }
         }
 

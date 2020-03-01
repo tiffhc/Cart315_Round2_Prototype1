@@ -1033,7 +1033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -129.3, y: -16.289581}
+  m_AnchoredPosition: {x: -129.30005, y: -16.28955}
   m_SizeDelta: {x: 580, y: 120}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &516314950
@@ -1945,7 +1945,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -129.3, y: -16.289581}
+  m_AnchoredPosition: {x: -129.30005, y: -16.28955}
   m_SizeDelta: {x: 580, y: 120}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &907226918
@@ -2698,6 +2698,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RM1_magnet
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c76db5b38ae524e35b6f56e9a43219b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c76db5b38ae524e35b6f56e9a43219b0, type: 3}
 --- !u!1 &1353917967 stripped
@@ -3128,7 +3133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -129.3, y: -16.289581}
+  m_AnchoredPosition: {x: -129.30005, y: -16.28955}
   m_SizeDelta: {x: 580, y: 120}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1527143039
@@ -3485,7 +3490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -129.3, y: -16.289581}
+  m_AnchoredPosition: {x: -129.30005, y: -16.28955}
   m_SizeDelta: {x: 580, y: 120}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1632066942
@@ -3860,6 +3865,7 @@ MonoBehaviour:
   book: {fileID: 1699399945}
   MessagePanel: {fileID: 1659425034}
   key: {fileID: 924699125}
+  magnet: {fileID: 1353917967}
   CF: {fileID: 1092213099}
   time: 5
 --- !u!1 &1759526881
